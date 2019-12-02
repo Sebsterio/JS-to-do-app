@@ -1,7 +1,12 @@
-/* .app-wrapper {
-  overrriding bootstrap
-  background-image: linear-gradient(to right, #314755, #26a0da) !important;
-} */
+:root {
+  --angle: 0;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(var(--angle), #314755, #26a0da) !important;
+}
 
 .app {
   position: absolute;
@@ -32,5 +37,31 @@
 }
 
 .custom-list-group {
+  max-height: 50vh;
   overflow-y: auto;
+}
+.custom-list-group-item {
+  transition: opacity 0.3s ease !important;
+}
+
+.item--first-visible {
+  border-top-width: 1px !important;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 720px;
+  }
 }
